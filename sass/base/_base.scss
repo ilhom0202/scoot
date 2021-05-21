@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+html {
+  width: 100vh;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Livvic', sans-serif;
+}
+
+a {
+  color: #fff;
+}

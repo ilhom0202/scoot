@@ -1,0 +1,26 @@
+{
+  "name": "myteam",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel compile:sass devserver"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilhom0202/7-1-architecture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ilhom0202/7-1-architecture/issues"
+  },
+  "homepage": "https://github.com/ilhom0202/7-1-architecture#readme",
+  "description": ""
+}
