@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 22px 0;
+    &-list {
+        margin-left: 5.8rem;
+        &__item {
+            &:not(:last-child) {
+                margin-right: 3.2rem;
+            }
+        }
+    }
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    &__link {
+        text-decoration: none;
+        color: $color-gray-aa;
+        transition: all 0.2s ease-in;
+        &:active {
+            color: $color-yellow;
+        }
+    }
+}

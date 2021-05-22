@@ -1,3 +1,11 @@
+.u-ml-auto {
+  margin-left: auto !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
 *,
 *::before,
 *::after {
@@ -8,65 +16,94 @@
 }
 
 html {
-  width: 100vh;
   scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: 'Livvic', sans-serif;
+  font-family: "Space Mono", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 114rem;
+  padding: 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  vertical-align: middle;
 }
 
 a {
-  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
-/* livvic-500 - latin */
+/* space-mono-regular - latin */
 @font-face {
-  font-family: 'Livvic';
+  font-family: "Space Mono";
   font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(""), url("../../fonts/livvic-v8-latin-500.woff2") format("woff2"), url("../../fonts/livvic-v8-latin-500.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 400;
+  src: url("../fonts/space-mono-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/space-mono-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/space-mono-v6-latin-regular.woff2") format("woff2"), url("../fonts/space-mono-v6-latin-regular.woff") format("woff"), url("../fonts/space-mono-v6-latin-regular.ttf") format("truetype"), url("../fonts/space-mono-v6-latin-regular.svg#SpaceMono") format("svg");
+  /* Legacy iOS */
 }
 
-/* livvic-500italic - latin */
+/* space-mono-700 - latin */
 @font-face {
-  font-family: 'Livvic';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: local(""), url("../../fonts/livvic-v8-latin-500italic.woff2") format("woff2"), url("../../fonts/livvic-v8-latin-500italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* livvic-600 - latin */
-@font-face {
-  font-family: 'Livvic';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local(""), url("../fonts/livvic-v8-latin-600.woff2") format("woff2"), url("../fonts/livvic-v8-latin-600.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* livvic-700 - latin */
-@font-face {
-  font-family: 'Livvic';
+  font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: local(""), url("../../fonts/livvic-v8-latin-700.woff2") format("woff2"), url("../../fonts/livvic-v8-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/space-mono-v6-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/space-mono-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/space-mono-v6-latin-700.woff2") format("woff2"), url("../fonts/space-mono-v6-latin-700.woff") format("woff"), url("../fonts/space-mono-v6-latin-700.ttf") format("truetype"), url("../fonts/space-mono-v6-latin-700.svg#SpaceMono") format("svg");
+  /* Legacy iOS */
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lexend-deca-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend-deca-v7-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v7-latin-regular.woff") format("woff"), url("../fonts/lexend-deca-v7-latin-regular.ttf") format("truetype"), url("../fonts/lexend-deca-v7-latin-regular.svg#LexendDeca") format("svg");
+  /* Legacy iOS */
 }
 
 html {
   font-size: 62.5%;
 }
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+.talent-heading {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #fff;
+  width: 50rem;
+  margin-bottom: 40px;
+}
+
+.secondary-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+.secondary-text.talent-text {
+  width: 40rem;
+  color: #fff;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 /* Document
    ========================================================================== */
 /**
@@ -407,5 +444,124 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  background-color: #fcb72b;
+  padding: 1.4rem 3.9rem;
+  border: 3px solid transparent;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.btn:active {
+  border: 3px solid #fcb72b;
+  background: none;
+  color: #fcb72b;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 0;
+}
+
+.header-list {
+  margin-left: 5.8rem;
+}
+
+.header-list__item:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.list__link {
+  text-decoration: none;
+  color: #939caa;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.list__link:active {
+  color: #fcb72b;
+}
+
+.talent-info {
+  width: 100vw;
+  background-color: rgba(47, 59, 89, 0.75);
+  background-image: url(../../images/header-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding-top: 15.3rem;
+  padding-bottom: 15.2rem;
+  position: relative;
+}
+
+.talent-info .talent-bottom {
+  display: inline-block;
+  margin-left: 9.5rem;
+  position: relative;
+}
+
+.talent-info .talent-bottom::before {
+  content: "";
+  display: inline-block;
+  width: 20.3rem;
+  height: 1.5rem;
+  background-image: url(../../images/arrow-before.svg);
+  position: absolute;
+  margin-top: 4rem;
+  top: 4rem;
+  right: calc(100% + 57px);
+}
+
+.talent-info .talent-bottom::after {
+  content: "";
+  display: inline-block;
+  width: 44.7rem;
+  height: 14rem;
+  background-image: url(../../images/arrow-after.svg);
+  position: absolute;
+  margin-top: 4rem;
+  top: 4rem;
+  left: calc(100% + 4rem);
+}
+
+.talent-info .talent-circle {
+  position: absolute;
+  bottom: 14.5rem;
+  right: -6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.talent-info .talent-circle .circle {
+  width: 6.2rem;
+  height: 6.2rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin-right: 2.4rem;
+}
+
+.talent-info .talent-circle .circle:last-child {
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
