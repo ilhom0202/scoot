@@ -1,22 +1,35 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  width: 100vh;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+    // width: 100vw;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Livvic', sans-serif;
+    font-family: "Space Mono", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 114rem;
+    padding: 0 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    vertical-align: middle;
 }
 
 a {
-  color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }

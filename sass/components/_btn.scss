@@ -1,0 +1,17 @@
+.btn {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    background-color: $color-yellow;
+    padding: 1.4rem 3.9rem;
+    border: 3px solid transparent;
+    outline: none;
+    color: $color-white;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    &:active {
+        border: 3px solid $color-yellow;
+        background: none;
+        color: $color-yellow;
+    }
+}

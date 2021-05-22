@@ -1,0 +1,48 @@
+.talent-info {
+    width: 100vw;
+    background-color: rgba(47, 59, 89, 0.75);
+    background-image: url(../../images/header-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding-top: 15.3rem;
+    padding-bottom: 15.2rem;
+    position: relative;
+    .talent-bottom {
+        display: inline-block;
+        margin-left: 9.5rem;
+        position: relative;
+        &::before {
+            @include baElements(20.3rem, 1.5rem);
+            background-image: url(../../images/arrow-before.svg);
+            position: absolute;
+            margin-top: 4rem;
+            top: 4rem;
+            right: calc(100% + 57px);
+        }
+        &::after {
+            @include baElements(44.7rem, 14rem);
+            background-image: url(../../images/arrow-after.svg);
+            position: absolute;
+            margin-top: 4rem;
+            top: 4rem;
+            left: calc(100% + 4rem);
+        }
+    }
+    .talent-circle {
+        position: absolute;
+        bottom: 14.5rem;
+        right: -6rem;
+        display: flex;
+        .circle {
+            width: 6.2rem;
+            height: 6.2rem;
+            border: 3px solid $color-white;
+            border-radius: 50%;
+            margin-right: 2.4rem;
+            &:last-child {
+                background-color: $color-white;
+            }
+        }
+    }
+}
