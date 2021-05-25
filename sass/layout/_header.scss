@@ -19,7 +19,7 @@
         text-decoration: none;
         color: $color-gray-aa;
         transition: all 0.2s ease-in;
-        &:active {
+        &:hover {
             color: $color-yellow;
         }
     }

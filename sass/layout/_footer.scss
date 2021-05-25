@@ -1,0 +1,45 @@
+.footer {
+    background: url(../../images/bg_footer.svg) $color-dark-navy;
+    background-repeat: no-repeat;
+    background-position: bottom 9.6rem right;
+    .page-footer {
+        padding: 102px 0;
+        align-items: center;
+        .store-btns a:first-child {
+            margin-right: 1.8rem;
+        }
+    }
+    .page-footer__bottom {
+        width: 100%;
+        background-color: #333a44;
+        padding: 3.5rem 0 3.2rem 0;
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            .logo {
+                color: $color-white;
+            }
+            .social-items {
+                display: flex;
+                .social-item:not(:last-child) {
+                    margin-right: 24px;
+                }
+                .social-item__link {
+                    color: $color-yellow;
+                    transition: all 0.2s ease-in;
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    &-list {
+        margin-left: 5.8rem;
+        &__item {
+            &:not(:last-child) {
+                margin-right: 3.2rem;
+            }
+        }
+    }
+}

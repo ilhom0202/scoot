@@ -74,3 +74,13 @@ html {
         margin-bottom: 4rem;
     }
 }
+
+.heading-secondary {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    &.footer-heading {
+        color: #ffffff;
+        width: 415px;
+    }
+}

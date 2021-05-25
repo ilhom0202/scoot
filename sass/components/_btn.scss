@@ -9,7 +9,7 @@
     color: $color-white;
     cursor: pointer;
     transition: all 0.3s ease-in;
-    &:active {
+    &:hover {
         border: 3px solid $color-yellow;
         background: none;
         color: $color-yellow;
